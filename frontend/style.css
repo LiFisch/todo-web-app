@@ -1,0 +1,161 @@
+/* general layout for the page */
+body {
+    /* set the main font */
+    font-family: "Open Sans", sans-serif;
+    /* light gray background color */
+    background-color: #f5f5f5;
+    /* flex layout to center container */
+    display: flex;
+    /* horizontally center the container */
+    justify-content: center;
+    /* align container to top of page */
+    align-items: flex-start;
+    /* minimum height to fill the viewport */
+    min-height: 100vh;
+    /* remove default margin */
+    margin: 0;
+    /* add some space around the page */
+    padding: 20px;
+}
+
+/* main container for the app */
+.container {
+     /* take full width of the parent/container */
+    width: 100%;
+    /* limit the width on large screens */
+    max-width: 500px;
+    /* white background for contrast */
+    background: white;
+    /* space inside the container */
+    padding: 20px;
+    /* rounded corners */
+    border-radius: 10px;
+    /* subtle shadow for depth */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* main heading */
+h1 {
+    /* semi-bold */
+    font-weight: 600;
+    /* center text */
+    text-align: center;
+    /* dark gray color */
+    color: #333333;
+    /* space below heading */
+    margin-bottom: 20px;
+}
+
+/* input area for task entry */
+.input-area {
+    /* Flex layout to place input and button next to each other */
+    display: flex;
+    /* space between input and button */
+    gap: 10px;
+    /* space below the input area */
+    margin-bottom: 20px;
+}
+
+/* text input field */
+#todoField {
+    /* take up all available space */
+    flex: 1;
+    /* inner spacing */
+    padding: 10px;
+    /* readable font size */
+    font-size: 16px;
+    /* rounded corners */
+    border-radius: 8px;
+    /* light gray border */
+    border: 1px solid #ccc;
+}
+
+/* add button */
+#addBtn {
+    /* inner spacing */
+    padding: 10px 20px;
+    /* readable font size */
+    font-size: 16px;
+    /* rounded corners */
+    border-radius: 8px;
+    /* remove default border */
+    border: none;
+    /* button color */
+    background-color: blueviolet;
+    /* text color */
+    color: white;
+    /* pointer cursor on hover */
+    cursor: pointer;
+}
+
+/* add button hover effect */
+#addBtn:hover {
+    opacity: 0.9;
+}
+
+/* toDo list */
+ul {
+    /* remove default padding */
+    padding: 0;
+    /* remove bullets */
+    list-style-type: none;
+}
+
+/* individual todo items */
+li {
+    /* flex layout for checkbox, text, and delete button */
+    display: flex;
+    /* vertically center content */
+    align-items: center;
+    /* space between text and delete button */
+    justify-content: space-between;
+    /* light gray background for tasks */
+    background: #fafafa;
+    /* space between tasks */
+    margin-bottom: 10px;
+    /* inner spacing */
+    padding: 10px;
+    /* rounded corners */
+    border-radius: 8px;
+    /* border */
+    border: 1px solid #eee;
+}
+
+/* space between checkbox and text */
+li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* delete button for each task */
+li button {
+    /* red color for delete */
+    background: #ff4d4d;
+    /* white text */
+    color: white;
+    /* remove default border */
+    border: none;
+    /* inner spacing */
+    padding: 5px 10px;
+    /* rounded corners */
+    border-radius: 5px;
+    /* pointer cursor on hover */
+    cursor: pointer;
+}
+
+/* delete button hover effect */
+li button:hover {
+    background: #e60000;
+}
+
+/* responsive design for small screens */
+@media (max-width: 600px) {
+    .input-area {
+        /* stack input and button vertically */
+        flex-direction: column;
+    }
+
+    /* button takes full width */
+    #addBtn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+
+    <!-- link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts preconnect for better loading performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts: Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- main container to center content and control layout -->
+    <div class="container">
+        <!-- main heading of the ToDo application -->
+        <h1>My ToDo List</h1>
+
+        <!-- input area: text field for new tasks & add button -->
+        <div class="input-area">
+            <input type="text" id="todoField" placeholder="Enter a new task.">
+            <button id="addBtn">Add</button>
+        </div>
+        
+        <!-- unordered list to display all todo items -->
+        <ul id="todoList"></ul>
+    </div>
+
+    <!-- link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
